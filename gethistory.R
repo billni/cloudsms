@@ -23,14 +23,9 @@ func <- function(n) {
     	
 }
 
-
-#func(50)
+#main
 system.time({
-x <- 1:50
-
-
-
-
+x <- 1:1000
 results <- list()
 cl <- makeCluster(3) # 初始化四核心集群
 clusterEvalQ(cl, {
