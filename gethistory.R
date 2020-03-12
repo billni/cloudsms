@@ -28,7 +28,7 @@ func <- function(n) {
 system.time({
 x <- 1:5663
 results <- list()
-cl <- makeCluster(3) # 初始化四核心集群
+cl <- makeCluster(4) # 初始化四核心集群
 clusterEvalQ(cl, {
 		require(parallel)
 		require(XML)

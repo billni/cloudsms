@@ -36,4 +36,3 @@ clusterEvalQ(cl, {
 results <- clusterApply(cl, x, func) # 并行执行
 stopCluster(cl) # 关闭集群
 })
-
